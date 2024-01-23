@@ -1,0 +1,47 @@
+@import "../index.scss";
+
+.form {
+  background-color: $color-dark--2;
+  border-radius: 7px;
+  padding: 2rem 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flag {
+    position: absolute;
+    right: 1rem;
+    top: 2.7rem;
+    font-size: 2.8rem;
+  }
+
+  &.loading {
+    opacity: 0.3;
+
+    button {
+      pointer-events: none;
+      background-color: $color-light--1;
+      border: 1px solid $color-light--1;
+      color: $color-dark--0;
+    }
+  }
+
+  // Globale Anpassung für react-datepicker
+  :global(.react-datepicker) {
+    font-family: inherit;
+    font-size: 1.2rem;
+  }
+}
