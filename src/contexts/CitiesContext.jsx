@@ -29,14 +29,14 @@ function CitiesProvider({ children }) {
 
   async function getCity(id) {
     try {
-      // setIsloading(true);
+      setIsloading(true);
       const res = await fetch(`${BASE_URL}/cities/${id}`);
       const data = await res.json();
       setCurrentCity(data);
     } catch (err) {
       console.error("There was an error loading data...", err);
     } finally {
-      // setIsloading(false);
+      setIsloading(false);
     }
   }
 

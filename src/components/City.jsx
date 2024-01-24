@@ -24,7 +24,7 @@ function City() {
   useEffect(() => {
     async function fetchData() {
       try {
-        setIsloading(true);
+        // setIsloading(true);
         await getCity(id);
         if (emoji && !isFlagLoaded) {
           const flagURL = `https://flagcdn.com/w20/${emoji.toLowerCase()}.png`;
@@ -33,7 +33,7 @@ function City() {
           image.onload = () => {
             setFlag(flagURL);
             setIsFlagLoaded(true);
-            setIsloading(false);
+            // setIsloading(false);
           };
           image.src = flagURL;
         }
