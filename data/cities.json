@@ -1,30 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "PT",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "ES",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": 17806751
-    },
-    {
       "cityName": "Berlin",
       "country": "Germany",
       "emoji": "DE",
@@ -34,7 +10,7 @@
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
     },
     {
       "cityName": "Schwerin",
@@ -46,7 +22,103 @@
         "lat": 53.63177334627048,
         "lng": 11.40803617326944
       },
-      "id": 98443155
+      "id": "98443155"
+    },
+    {
+      "id": "6bed",
+      "cityName": "Serams",
+      "country": "Germany",
+      "emoji": "DE",
+      "date": "2024-01-25T21:25:52.420Z",
+      "notes": "Homeland",
+      "position": {
+        "lat": "54.3773511917641",
+        "lng": "13.590228053492394"
+      }
+    },
+    {
+      "id": "79ed",
+      "cityName": "Zürich",
+      "country": "Switzerland",
+      "emoji": "CH",
+      "date": "2012-01-25T21:29:18.000Z",
+      "notes": "Work",
+      "position": {
+        "lat": "47.367466465420705",
+        "lng": "8.497256057623376"
+      }
+    },
+    {
+      "id": "0684",
+      "cityName": "Muetos Muragle",
+      "country": "Switzerland",
+      "emoji": "CH",
+      "date": "2024-01-25T21:32:13.012Z",
+      "notes": "Amazing 😁",
+      "position": {
+        "lat": "46.508764586944146",
+        "lng": "9.882938775121431"
+      }
+    },
+    {
+      "id": "d4db",
+      "cityName": "Luzern",
+      "country": "Switzerland",
+      "emoji": "CH",
+      "date": "2012-01-25T21:34:25.000Z",
+      "notes": "so pretty city",
+      "position": {
+        "lat": "47.05194994913408",
+        "lng": "8.301848727194672"
+      }
+    },
+    {
+      "id": "3bb9",
+      "cityName": "Cuxhaven",
+      "country": "Germany",
+      "emoji": "DE",
+      "date": "2015-01-25T21:54:09.000Z",
+      "notes": "Deichbrand Festival",
+      "position": {
+        "lat": "53.86783382331497",
+        "lng": "8.698996357783868"
+      }
+    },
+    {
+      "id": "a7f2",
+      "cityName": "Flensburg",
+      "country": "Germany",
+      "emoji": "DE",
+      "date": "2019-01-02T22:05:03.000Z",
+      "notes": "Felix Lobrecht - Hype",
+      "position": {
+        "lat": "54.78307120444919",
+        "lng": "9.437775446264995"
+      }
+    },
+    {
+      "id": "7086",
+      "cityName": "Augsburg",
+      "country": "Germany",
+      "emoji": "DE",
+      "date": "2022-10-25T21:06:41.000Z",
+      "notes": "Schwiegereltern besuchen",
+      "position": {
+        "lat": "48.3644066505826",
+        "lng": "10.892306089866626"
+      }
+    },
+    {
+      "id": "404b",
+      "cityName": "Wernigerode",
+      "country": "Germany",
+      "emoji": "DE",
+      "date": "2021-10-25T21:07:45.000Z",
+      "notes": "Urlaub Harz",
+      "position": {
+        "lat": "51.83315062802937",
+        "lng": "10.782346941858494"
+      }
     }
   ]
 }
