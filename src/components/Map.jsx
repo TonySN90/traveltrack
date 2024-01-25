@@ -10,17 +10,23 @@ import {
 import styles from "./Map.module.scss";
 import { useEffect, useState } from "react";
 import { useCities } from "../contexts/CitiesContext";
+import { useGeolocation } from "../hooks/useGeolocation";
+import { useUrlPosition } from "../hooks/useUrlPosition";
+import Button from "./Button";
 
 function Map() {
   const { cities } = useCities();
-
   const [mapPosition, setMapPosition] = useState([
     53.63177334627048, 11.40803617326944,
   ]);
-  const [searchParams] = useSearchParams();
 
-  const mapLat = searchParams.get("lat");
-  const mapLng = searchParams.get("lng");
+  const {
+    isLoading: isLoadingPosition,
+    position: geoloactionPosition,
+    getPosition,
+  } = useGeolocation();
+
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(
     function () {
@@ -29,8 +35,22 @@ function Map() {
     [mapLat, mapLng]
   );
 
+  useEffect(
+    function () {
+      if (geoloactionPosition)
+        setMapPosition([geoloactionPosition.lat, geoloactionPosition.lng]);
+    },
+    [geoloactionPosition]
+  );
+
   return (
     <div className={styles.mapContainer}>
+      {!geoloactionPosition && (
+        <Button type="position" onClick={getPosition}>
+          {isLoadingPosition ? "Loading..." : "Use your position"}
+        </Button>
+      )}
+
       <MapContainer
         center={mapPosition}
         zoom={13}
@@ -70,7 +90,6 @@ function DetectClick() {
 
   useMapEvents({
     click: (e) => {
-      console.log(e);
       navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
     },
   });
