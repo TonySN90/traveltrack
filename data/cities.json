@@ -119,6 +119,54 @@
         "lat": "51.83315062802937",
         "lng": "10.782346941858494"
       }
+    },
+    {
+      "id": "d3ec",
+      "cityName": "Konstanz",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2017-07-26T06:38:02.000Z",
+      "notes": "Urlaub Rückreise/ Zwischenziel",
+      "position": {
+        "lat": "47.65907853917504",
+        "lng": "9.175747757264544"
+      }
+    },
+    {
+      "id": "7a97",
+      "cityName": "Dresden",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2011-01-26T07:39:06.000Z",
+      "notes": "Urlaub Rückreise/ Zwoischenstopp",
+      "position": {
+        "lat": "51.0517140608297",
+        "lng": "13.75017098625239"
+      }
+    },
+    {
+      "id": "0d99",
+      "cityName": "Thun",
+      "country": "Switzerland",
+      "emoji": "🇨🇭",
+      "date": "2011-01-26T07:41:40.000Z",
+      "notes": "Urlaub Mudders",
+      "position": {
+        "lat": "46.75736719444101",
+        "lng": "7.628152871676651"
+      }
+    },
+    {
+      "id": "90f8",
+      "cityName": "Lugano",
+      "country": "Switzerland",
+      "emoji": "🇨🇭",
+      "date": "2002-10-26T06:42:34.000Z",
+      "notes": "Urlaub 2002",
+      "position": {
+        "lat": "46.001528639442455",
+        "lng": "8.951355473968748"
+      }
     }
   ]
 }
