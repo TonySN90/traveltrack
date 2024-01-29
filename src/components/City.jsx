@@ -42,7 +42,7 @@ function City() {
       }
     }
     fetchData();
-  }, [id, emoji]);
+  }, [id, getCity, emoji]);
 
   if (isLoading) return <Spinner />;
 

@@ -124,7 +124,7 @@
       "id": "d3ec",
       "cityName": "Konstanz",
       "country": "Germany",
-      "emoji": "🇩🇪",
+      "emoji": "DE",
       "date": "2017-07-26T06:38:02.000Z",
       "notes": "Urlaub Rückreise/ Zwischenziel",
       "position": {
@@ -136,7 +136,7 @@
       "id": "7a97",
       "cityName": "Dresden",
       "country": "Germany",
-      "emoji": "🇩🇪",
+      "emoji": "DE",
       "date": "2011-01-26T07:39:06.000Z",
       "notes": "Urlaub Rückreise/ Zwoischenstopp",
       "position": {
@@ -148,7 +148,7 @@
       "id": "0d99",
       "cityName": "Thun",
       "country": "Switzerland",
-      "emoji": "🇨🇭",
+      "emoji": "CH",
       "date": "2011-01-26T07:41:40.000Z",
       "notes": "Urlaub Mudders",
       "position": {
@@ -160,7 +160,7 @@
       "id": "90f8",
       "cityName": "Lugano",
       "country": "Switzerland",
-      "emoji": "🇨🇭",
+      "emoji": "CH",
       "date": "2002-10-26T06:42:34.000Z",
       "notes": "Urlaub 2002",
       "position": {
