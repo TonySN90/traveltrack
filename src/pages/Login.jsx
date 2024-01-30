@@ -6,17 +6,15 @@ import { useAuth } from "../contexts/FakeAuthContext";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-  // PRE-FILL FOR DEV PURPOSES
-  const [email, setEmail] = useState("tony@example.com");
-  const [password, setPassword] = useState("12345");
+  // PRE-FILL
+  const [email, setEmail] = useState("max@beispiel.com");
+  const [password, setPassword] = useState("superSafePW");
 
   const { login, isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(useAuth);
-
     if (email && password) login(email, password);
   }
 
@@ -29,7 +27,7 @@ export default function Login() {
       <PageNav />
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.row}>
-          <label htmlFor="email">Email address</label>
+          <label htmlFor="email">Email Addresse</label>
           <input
             type="email"
             id="email"
@@ -39,7 +37,7 @@ export default function Login() {
         </div>
 
         <div className={styles.row}>
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Passwort</label>
           <input
             type="password"
             id="password"

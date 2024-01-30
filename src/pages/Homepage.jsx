@@ -8,14 +8,14 @@ export default function Homepage() {
       <PageNav />
       <section>
         <h1>
-          You travel the world.
+          Du bereist die Welt.
           <br />
-          WorldWise keeps track of your adventures.
+          TravelTrack hält deine Abenteuer im Blick.
         </h1>
         <h2>
-          A world map that tracks your footsteps into every city you can think
-          of. Never forget your wonderful experiences, and show your friends how
-          you have wandered the world.
+          Eine Weltkarte, die deinen Schritten auf der Spur ist. Vergiss nie
+          deine wunderbaren Erlebnisse und zeige deinen Freunden, wie du die
+          Welt durchstreift hast.
         </h2>
 
         <Link to="/login" className="cta">

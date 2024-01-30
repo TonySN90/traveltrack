@@ -11,8 +11,6 @@
   }
 }
 
-// Hier stylen wir Klassen, die von Leaflet kommen. Wir möchten, dass CSS-Module uns die tatsächlichen Klassennamen geben, nicht irgendeine zufällige ID hinzufügen, weil sie dann nicht mit den innerhalb der Karte definierten Klassennamen übereinstimmen. Die Lösung besteht darin, diese Klassen als GLOBAL zu definieren.
-
 :global(.leaflet-popup .leaflet-popup-content-wrapper) {
   background-color: $color-dark--1;
   color: $color-light--2;

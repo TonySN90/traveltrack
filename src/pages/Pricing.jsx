@@ -9,9 +9,9 @@ export default function Product() {
       <section>
         <div>
           <h2>
-            Simple pricing.
+            Einfache Preisgestaltung.
             <br />
-            Just $9/month.
+            Nur 9€/Monat.
           </h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae vel
@@ -19,7 +19,7 @@ export default function Product() {
             voluptatem iste.
           </p>
         </div>
-        <img src="img-2.jpg" alt="overview of a large city with skyscrapers" />
+        <img src="img-2.webp" alt="overview of a large city with skyscrapers" />
       </section>
     </main>
   );

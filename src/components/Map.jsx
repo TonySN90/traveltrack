@@ -47,7 +47,7 @@ function Map() {
     <div className={styles.mapContainer}>
       {!geoloactionPosition && (
         <Button type="position" onClick={getPosition}>
-          {isLoadingPosition ? "Loading..." : "Use your position"}
+          {isLoadingPosition ? "Lade..." : "Finde deine Position"}
         </Button>
       )}
 
