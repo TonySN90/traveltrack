@@ -16,7 +16,7 @@ const formatDate = (date) =>
 
 function City() {
   const { id } = useParams();
-  const { getCity, currentCity, isLoading, setIsloading } = useCities();
+  const { getCity, currentCity, isLoading } = useCities();
   const { cityName, emoji, date, notes } = currentCity;
   const [flag, setFlag] = useState(null);
   const [isFlagLoaded, setIsFlagLoaded] = useState(false);
@@ -42,9 +42,11 @@ function City() {
       }
     }
     fetchData();
-  }, [id, getCity, emoji]);
+  }, [id, getCity, emoji, isFlagLoaded]);
 
   if (isLoading) return <Spinner />;
+
+  console.log(isLoading);
 
   return (
     <div className={styles.city}>

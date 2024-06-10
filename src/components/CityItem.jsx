@@ -19,6 +19,8 @@ function CityItem({ city }) {
     console.log("test");
   }
 
+  console.log(emoji);
+
   const countryIcon = `https://flagcdn.com/w20/${emoji.toLowerCase()}.png`;
   return (
     <li>
