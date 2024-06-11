@@ -1,4 +1,4 @@
-import { useCallback, useContext, useReducer } from "react";
+import { useContext, useReducer } from "react";
 import { createContext, useEffect } from "react";
 import supabase from "../services/supabase";
 
@@ -51,7 +51,7 @@ const reducer = (state, action) => {
 };
 
 function CitiesProvider({ children }) {
-  const [{ cities, isLoading, currentCity, error }, dispatch] = useReducer(
+  const [{ cities, isLoading, currentCity }, dispatch] = useReducer(
     reducer,
     initialState
   );
@@ -77,31 +77,6 @@ function CitiesProvider({ children }) {
 
     fetchCities();
   }, []);
-
-  const getCity = useCallback(
-    async function getCity(id) {
-      if (Number(id) === currentCity.id) return;
-
-      dispatch({ type: "loading" });
-      try {
-        let { data: city, error } = await supabase
-          .from("cities")
-          .select("*")
-          .eq("id", id)
-          .single();
-
-        if (error) throw new Error(error.message);
-
-        dispatch({ type: "city/loaded", payload: city });
-      } catch (err) {
-        dispatch({
-          type: "rejected",
-          payload: "There was an error loading the city...",
-        });
-      }
-    },
-    [currentCity.id]
-  );
 
   async function createCity(newCity) {
     dispatch({ type: "loading" });
@@ -143,8 +118,8 @@ function CitiesProvider({ children }) {
         cities,
         isLoading,
         currentCity,
-        error,
-        getCity,
+        setCurrentCity: (city) =>
+          dispatch({ type: "city/loaded", payload: city }),
         createCity,
         deleteCity,
       }}

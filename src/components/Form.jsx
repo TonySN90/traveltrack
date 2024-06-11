@@ -11,17 +11,6 @@ import Spinner from "./Spinner";
 import { useCities } from "../contexts/CitiesContext";
 import { useNavigate } from "react-router-dom";
 
-// export function convertToEmoji(countryCode) {
-//   const base = 127397;
-//   const codePoints = countryCode
-//     .toUpperCase()
-//     .split("")
-//     .map((char) => base + char.charCodeAt());
-//   const emojiString = String.fromCodePoint(...codePoints) || countryCode;
-//   console.log(emojiString);
-//   return emojiString;
-// }
-
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
 function Form() {
@@ -50,7 +39,7 @@ function Form() {
           const data = await res.json();
           if (!data.countryCode)
             throw new Error(
-              "That doesn´t seem to be a city. Click somewhere else 😊"
+              "Das scheint keine Stadt zu sein. Klicke irgendwoanders hin 😊"
             );
           setCityName(data.city || data.locality || "");
           setCountry(data.countryName);
@@ -98,7 +87,7 @@ function Form() {
       onSubmit={handleSubmit}
     >
       <div className={styles.row}>
-        <label htmlFor="cityName">City name</label>
+        <label htmlFor="cityName">Ortsname</label>
         <input
           id="cityName"
           onChange={(e) => setCityName(e.target.value)}
@@ -108,7 +97,7 @@ function Form() {
       </div>
 
       <div className={styles.row}>
-        <label htmlFor="date">When did you go to {cityName}?</label>
+        <label htmlFor="date">Wann warst du in {cityName}?</label>
 
         <DatePicker
           id="date"
@@ -119,7 +108,9 @@ function Form() {
       </div>
 
       <div className={styles.row}>
-        <label htmlFor="notes">Notes about your trip to {cityName}</label>
+        <label htmlFor="notes">
+          Anmerkungen zu Ihrer Reise nach {cityName}
+        </label>
         <textarea
           id="notes"
           onChange={(e) => setNotes(e.target.value)}
@@ -128,7 +119,7 @@ function Form() {
       </div>
 
       <div className={styles.buttons}>
-        <Button type="primary">Add</Button>
+        <Button type="primary">Hinzufügen</Button>
         <BackButton />
       </div>
     </form>

@@ -19,7 +19,7 @@ export default function Homepage() {
         </h2>
 
         <Link to="/login" className="cta">
-          Start tracking
+          Starte tracking
         </Link>
       </section>
     </main>
